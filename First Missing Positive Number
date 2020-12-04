@@ -1,0 +1,23 @@
+num="arr = [1,2,9,-1,8,-4,3] "
+l1=list()
+str1=num.split(' ')[2]
+
+str1=str1[1:len(str1)-1]
+
+str1=str1.split(',')
+temp=list()
+for i in range(len(str1)):
+    temp.append(int(str1[i]))
+temp=sorted(temp)
+for i in range(0,len(temp)):
+    if temp[i]<0:
+        pass
+    else:
+        asch=temp[i]
+        asch=temp[i]+1
+        if asch in temp:
+            pass
+        else:
+            print("MISSING NUMBER=",asch)
+            break
+        
